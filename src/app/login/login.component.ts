@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   adminLogin = () => {
     if (this.adminusername == "admin" && this.adminpass == "admin") {
       alert("SUCCESSFUL")
-      this.myrouter.navigate(["/admindash"])
+      this.myrouter.navigate(["/addemp"])
 
     } else {
       alert("INVALID")

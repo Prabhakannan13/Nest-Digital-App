@@ -17,4 +17,8 @@ export class ApiService {
   loginSec=(data:any)=>{
     return this.http.post("http://localhost:8080/signinsecurity",data)
   }
+
+  addemp=(data:any)=>{
+    return this.http.post("localhost:8080/addemp",data)
+  }
 }

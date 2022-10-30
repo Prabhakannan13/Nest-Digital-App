@@ -8,10 +8,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AddempComponent } from './addemp/addemp.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:LoginComponent
+  },
+  {
+    path:"addemp",component:AddempComponent
   }
 ]
 
@@ -19,7 +23,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    AddempComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     FormsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
