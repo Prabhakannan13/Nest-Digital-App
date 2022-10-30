@@ -29,4 +29,8 @@ export class ApiService {
   addleave=(data:any)=>{
     return this.http.post("https://localhost:8080/addleave",data)
   }
+
+  viewallleaves=()=>{
+    return this.http.get("https://localhost:8080/viewallleaves")
+  }
 }

@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { AddempComponent } from './addemp/addemp.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
 import { AddleaveComponent } from './addleave/addleave.component';
+import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 
 const appRoutes:Routes=[
   {
@@ -24,6 +25,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addleave",component:AddleaveComponent
+  },
+  {
+    path:"viewleave",component:ViewallleaveComponent
   }
 ]
 
@@ -34,7 +38,8 @@ const appRoutes:Routes=[
     LoginComponent,
     AddempComponent,
     ViewempComponent,
-    AddleaveComponent
+    AddleaveComponent,
+    ViewallleaveComponent
   ],
   imports: [
     BrowserModule,
