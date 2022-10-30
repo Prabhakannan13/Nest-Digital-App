@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddempComponent } from './addemp/addemp.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
+import { AddleaveComponent } from './addleave/addleave.component';
 
 const appRoutes:Routes=[
   {
@@ -20,6 +21,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewemp",component:ViewempComponent
+  },
+  {
+    path:"addleave",component:AddleaveComponent
   }
 ]
 
@@ -29,7 +33,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     LoginComponent,
     AddempComponent,
-    ViewempComponent
+    ViewempComponent,
+    AddleaveComponent
   ],
   imports: [
     BrowserModule,
