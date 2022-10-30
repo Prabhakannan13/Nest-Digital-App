@@ -13,6 +13,7 @@ import { ViewempComponent } from './viewemp/viewemp.component';
 import { AddleaveComponent } from './addleave/addleave.component';
 import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 
 const appRoutes:Routes=[
   {
@@ -32,6 +33,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addsecurity",component:AddsecurityComponent
+  },
+  {
+    path:"viewsec",component:ViewsecurityComponent
   }
 ]
 
@@ -44,7 +48,8 @@ const appRoutes:Routes=[
     ViewempComponent,
     AddleaveComponent,
     ViewallleaveComponent,
-    AddsecurityComponent
+    AddsecurityComponent,
+    ViewsecurityComponent
   ],
   imports: [
     BrowserModule,
