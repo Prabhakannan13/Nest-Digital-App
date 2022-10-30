@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddempComponent } from './addemp/addemp.component';
+import { ViewempComponent } from './viewemp/viewemp.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addemp",component:AddempComponent
+  },
+  {
+    path:"viewemp",component:ViewempComponent
   }
 ]
 
@@ -24,7 +28,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    AddempComponent
+    AddempComponent,
+    ViewempComponent
   ],
   imports: [
     BrowserModule,

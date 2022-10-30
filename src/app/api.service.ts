@@ -21,4 +21,8 @@ export class ApiService {
   addemp=(data:any)=>{
     return this.http.post("localhost:8080/addemp",data)
   }
+
+  viewallemp=()=>{
+    return this.http.get("https://localhost:8080/viewallemp")
+  }
 }
